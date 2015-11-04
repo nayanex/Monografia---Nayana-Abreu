@@ -1,0 +1,522 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass abntex2
+\begin_preamble
+%\usepackage{tabela-simbolos}
+\end_preamble
+\options ruledheader, brazil
+\use_default_options true
+\maintain_unincluded_children false
+\language brazilian
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\index Índice
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Chapter
+INTRODUÇÃO
+\begin_inset CommandInset label
+LatexCommand label
+name "chap:INTRODUÇÃO"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Modelos 3D são utilizados em muitas aplicações, na indústria de games e
+ filmes, setor médico, simulações de treinamento, realidade aumentada, arqueolog
+ia, inspeção industrial e muitas outras.
+ Modelos 3D podem ser gerados por meio de processo de natureza artística
+ ou técnica utilizando-se algum software de modelagem.
+ No entanto, aplicações como inspeção industrial e projeto de plantas arquitetôn
+icas exigem uma representação realística de objetos complexos 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "MALIK2009"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Em vários tipos de indústria o desenho de modelos 3D de forma descritiva
+ e precisa se torna necessária por vários motivadores, por exemplo, para
+ legalizar determinada propriedade ou pedir financiamento para dado projeto
+ é necessária a modelagem de planta baixa do terreno.
+ Na indústria mecânica e de manufatura se utiliza a modelagem 3D para reprodução
+ de modelos e escalabilidade da produção.
+ No entanto, o processo de modelagem de um objeto 3D pode se tornar dispendiosa
+ em termos de dinheiro, tempo e mão de obra.
+ 
+\end_layout
+
+\begin_layout Standard
+Analisando-se tal problema, este trabalho visa reduzir etapas do processo
+ da modelagem de objetos 3D propondo um sistema para geração semiautomatizada
+ de Projetos Auxiliados Por Computador, industrialmente conhecidos como
+ 
+\shape italic
+Computer-Aided Design
+\shape default
+ (CAD), utilizando-se parâmetros de coordenadas geométricas relativas coletadas
+ por meio dos sensores de natureza de 
+\shape italic
+hardware
+\shape default
+ e/ou 
+\shape italic
+software
+\shape default
+ embutidos em dispositivo móvel como giroscópio, acelerômetro e sistema
+ de câmera.
+ 
+\end_layout
+
+\begin_layout Standard
+O processo de digitalização 3D apresentado neste trabalho exige a seleção
+ de diferentes pontos de visualização selecionados por um operador humano
+ especializado.
+ A qualidade do resultado final depende da quantidade e seleção de tais
+ pontos.
+ Portanto, a eficiência do resultado final depende também da expertise do
+ operador.
+\end_layout
+
+\begin_layout Standard
+O processo de modelagem 3D nesse projeto pode ser dividido em três etapas
+ gerais: a primeira se refere ao processo de aquisição de dados de coordenadas
+ geométricas relativas utilizando-se dispositivo móvel com sistema operacional
+ Android; a segunda é relativa ao pós-processamento, onde a modelagem é
+ feita por meio de programação utilizando-se a Interface de Programação
+ de Aplicações (API – 
+\shape italic
+Application Programming Interface
+\shape default
+) em Ruby do programa SketchUp; e a última etapa envolve a integração das
+ duas fases anteriores por meio da utilização da classe WebDialog da API
+ em Ruby do SketchUp.
+ 
+\end_layout
+
+\begin_layout Standard
+Interessa-se nesse trabalho em objetos cujas geometrias são facilmente especific
+adas como uma combinação de formas básicas.
+ Por exemplo, muitas partes mecânicas podem ser desconstruídas como um conjunto
+ de entidades geométricas simples (paralelepípedos, cilindros, esferas etc.).
+ Trabalhou-se em um algoritmo capaz de conectar os pontos coletados, através
+ de relações espaciais aferidas.
+ 
+\end_layout
+
+\begin_layout Section
+Formulação do problema
+\end_layout
+
+\begin_layout Standard
+Segundo 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+citeonline{MALIK2009} 
+\end_layout
+
+\end_inset
+
+, a automação do processo de digitalização 3D pode melhorar a eficiência
+ e qualidade do resultado final reduzindo custos de pós-processamento e
+ exigindo menos das habilidades do operador.
+ Atualmente não há um sistema de digitalização 3D completamente automatizado
+ comercialmente, e há uma forte demanda por este na indústria.
+\end_layout
+
+\begin_layout Standard
+A disponibilidade de dispositivos para aquisição de dados geométricos acurados,
+ como um 
+\shape italic
+scanner
+\shape default
+ 3D, tornou a aquisição de coordenadas espaciais de um amplo conjunto de
+ pontos da superfície de um objeto 3D relativamente simples 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "BERNADINI1999"
+
+\end_inset
+
+, no entanto, nem sempre pode-se contar com a disponibilidade de um 
+\shape italic
+scanner
+\shape default
+ 3D.
+ Desse modo, verificam-se brechas para exploração de métodos que possam
+ automatizar o processo de modelagem 3D utilizando-se ferramentas mais acessívei
+s e populares, não só do ponto de vista tecnológico, mas também econômico
+ e cognitivo.
+ 
+\end_layout
+
+\begin_layout Standard
+Hoje o processo para representação de objetos 3D é feita majoritariamente
+ de modo manual, primeiro verifica-se as medidas dos elementos utilizando-se
+ ferramentas como trena, régua, paquímetro etc., e em seguida é feito o desenho
+ deste de forma manual ou utilizando-se algum software CAD.
+ Tal processo, dependendo da complexidade do objeto a ser representado,
+ pode se tornar entediante, trabalhoso, dispendioso e até mesmo repetitivo.
+ Percebe-se assim, que o tempo utilizado com medições e desenhos manuais
+ poderia ser utilizado para outras atividades de maior valor agregado.
+\end_layout
+
+\begin_layout Section
+Justificativa
+\end_layout
+
+\begin_layout Standard
+A escassez de metodologias e ferramentas acessíveis do ponto de vista econômico
+ e prático, que possibilitem reduzir passos no processo de modelagem de
+ objetos 3D é o principal motivador deste trabalho.
+ A possibilidade de poder gerar modelos 3D de forma automatizada ou semiatutomat
+izada utilizando-se dispositivos populares como 
+\shape italic
+smartphones
+\shape default
+, hoje dotados de variados sensores, permite a construção de várias aplicações
+ por parte de profissionais da área de tecnologia e até mesmo aficionados.
+\end_layout
+
+\begin_layout Standard
+A velocidade dos avanços tecnológicos computacionais está continuamente
+ abrindo caminho para novas ferramentas de design, aumentando a perspectiva
+ de reutilização de projetos e automação.
+ Esse fator pode ser usado para abolir tarefas rotineiras, eliminando possibilid
+ade de erros humanos e abrindo espaço para desenvolvimento de produtos mais
+ personalizados 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "TARKIAN2009"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Tal trabalho contribuiria para redução de atividades repetitivas, onerosas,
+ além de possibilitar a modularização de projetos CAD, permitindo maior
+ colaboração entre um time através do compartilhamento de modelos para utilizaçã
+o em outros projetos com diferentes medidas.
+ Poder-se-ia até mesmo estender sua utilidade para a área de Manufatura
+ Auxiliada por Computador (CAM) e prototipagem de sólidos em 3D, como impressão
+ 3D.
+\end_layout
+
+\begin_layout Standard
+O sistema proposto também abriria espaço para o desenvolvimento de novos
+ produtos, beneficiando-se da produção modular e redução de trabalho com
+ manutenção.
+ Tal proposta visa acelerar o design e entrega de produtos, ao mesmo tempo
+ em que objetiva reduzir custos e liberar engenheiros e técnicos para a
+ realização de atividades de valor agregado mais significativo.
+ 
+\end_layout
+
+\begin_layout Section
+Objetivos
+\end_layout
+
+\begin_layout Standard
+Construir protótipo de sistema que permita a geração automatizada de objeto
+ 3D, como o compartimento de um prédio, através do uso de informações de
+ coordenadas e medidas geométricas relativas coletadas por meio de sensores
+ embutidos e sistema de câmera de dispositivo móvel microprocessado.
+ Tal objetivo pode ser alcançado por meio das seguintes etapas:
+\end_layout
+
+\begin_layout Itemize
+Realizar revisão bibliográfica que confere embasamento teórico para realização
+ do trabalho.
+\end_layout
+
+\begin_layout Itemize
+Escolher software de modelagem 3D e API e/ou linguagem de programação utilizados
+ para construir algoritmo de geração automatizada de desenho 3D.
+\end_layout
+
+\begin_layout Itemize
+Realizar testes com software e API de modelagem escolhidos, verificando
+ suas funcionalidades, classes, métodos, etc.
+\end_layout
+
+\begin_layout Itemize
+Iniciar trabalho em algoritmo para geração de modelos 3D utilizando as funcional
+idades da API e software de modelagem escolhidos.
+\end_layout
+
+\begin_layout Itemize
+Realizar testes com o(s) algoritmo(s) pensado(s) utilizando coleção de coordenad
+as falsas.
+\end_layout
+
+\begin_layout Itemize
+Escolher dispositivo móvel microprocessado e sistema operacional utilizado
+ para coleta de coordenadas geométricas.
+\end_layout
+
+\begin_layout Itemize
+Escolher ambiente de desenvolvimento, bibliotecas e pacotes necessários
+ para construção de aplicação que coletará coordenadas geométricas.
+\end_layout
+
+\begin_layout Itemize
+Realizar testes com sensores embutidos e sistema de câmera de plataforma
+ móvel.
+\end_layout
+
+\begin_layout Itemize
+Trabalhar em algortimo para obtenção de medidas e coordenadas geométricaas
+ com disposito móvel.
+\end_layout
+
+\begin_layout Itemize
+Estudar coerência de medições geométricas relativas.
+\end_layout
+
+\begin_layout Itemize
+Realizar integração entre dados de coordenadas geométricas processados por
+ dispositvo móvel e software desktop de modelagem 3D.
+\end_layout
+
+\begin_layout Itemize
+Verificar veracidade da modelagem e elaborar propostas de melhoria.
+ 
+\end_layout
+
+\begin_layout Section
+Metodologia
+\end_layout
+
+\begin_layout Standard
+trata-se do caminho que será seguiddo para responder a questao proposta,
+ quais ferramentas serao adotadas para responder ao problema de pesquisa
+\end_layout
+
+\begin_layout Standard
+metodo é um conjunto de processos necessárop para alcancar fins de uma investiga
+cao
+\end_layout
+
+\begin_layout Standard
+a metodologia deve apresentar
+\end_layout
+
+\begin_layout Standard
+o tipo de pesquisa que realizará
+\end_layout
+
+\begin_layout Standard
+universo e amostra
+\end_layout
+
+\begin_layout Standard
+instrumentos de coletas de dados metodo e nalise
+\end_layout
+
+\begin_layout Standard
+O presente trabalho possui natureza de pesquisa aplicada, cujo objetivo
+ é a realização de uma análise exploratória e explicativa sobre o material
+ bibliográfico coletado.
+ Os procedimentos técnicos a serem utilizados são os de pesquisa bibliográfica
+ e experimental.
+ O método de abordagem é o hipotético-dedutivo e a elaboração segue o método
+ de procedimento monográfico.
+ A coleta de dados é feita por meio de documentação direta e indireta, e
+ a análise e interpretação dos dados são feitas de modo global.
+ 
+\end_layout
+
+\begin_layout Standard
+Com relação à pesquisa propriamente dita, primeiramente foi realizada uma
+ pesquisa bilbiográfica através de artigos com temas similares ou que utilizam
+ ferramentas também necessárias para a construção do projeto.
+ Sendo assim, houve uma exploração por temas como reconstrução automática
+ de modelos CAD 3D a partir de scanners digitais, reconstrução de base correlaci
+onal de um objeto 3D a partir de um esboço desenhado a mão, computação de
+ pontos de visualização para inspeção óptica 3D de componentes mecânicos,
+ geração de modelos de contrução 3D à partir de plantas arquitetônicas,
+ reconhecimento de objeto tridimensional a partir de ima única imagem de
+ duas dimensoes, reconhecimento automático de objetos de modelo CAD 3D em
+ uma nuvem densa de faixas de pontos a laser, construção automática de modelos
+ 3D de ambientes inabitados utilizando scanners a laser e sensores RFID,
+ varredura de superfícies 3D automatizado baseado em modelos CAD, microambiente
+ de sensoriamento para smartphones, framework de sensoriamento em smartphones.
+\end_layout
+
+\begin_layout Standard
+Tal pesquisa através de artigos possibilitou uma visão e noção sobre as
+ atuais descobertas e avanços na área de automação de geração CAD, assim
+ como noção de problemas que ainda precisam de soluções ou melhorias.
+ Também foi feita pesquisa por meio de livros utilizados no meio acadêmico,
+ percorreu-se por temas como arquitetura de computadores, desenvolvimento
+ para sistema operacional, computação gráfica, programação orientada a objetos,
+ tecnologia web, projetos auxiliado por computador, sistemas sensoriais,
+ linguagem de programação Ruby.
+\end_layout
+
+\begin_layout Standard
+Primeiramente haverá uma pesquisa sobre métodos para medição de distâncias
+ geométricas, aquisição de coordenados e medição de ângulos com o uso de
+ sensores.
+ Será feito um estudo sobre vantagens de prototipação de sistema de hardware
+ próprio usando plataforma Arduino, sensor de inclinação, sensor óptico
+ linear em relação a utilização de sensores embutidos e processador de plataform
+a mobile.
+ Em seguida serão feitos estudos no sentido de tornar o processo de aquisição
+ de medições mais acurado, e trabalho em técnicas de otimização e redução
+ de erro.
+ Tendo a parte de medições feita, será feito uma pesquisa sobre a linguagem
+ de programação e API mais apropriada para a renderização dos modelos CAD,
+ assim como inicialização de construção de algoritmo para desenho do objeto
+ 3D ou manipulação de API.
+ Há interesse de se desenvolver tal etapa do projeto com OpenGL e/ou Processing.
+ Após o passo descrito anteriormente, procurar-se-á um sistema de armazenamento
+ para os modelos de base.
+ Haverá um estudo de sua operação e utilização juntamente a linguagem de
+ programação e/ou API escolhida para construção do algoritmo de renderização.
+ Por fim, testes para verificação de funcionamento apropriado serão feitos
+ com o protótipo desenvolvido em objetos como caixa de papelão de diferentes
+ dimensões e formas geométricas semelhantes.
+ A implementação de hardware será feita nas dependências laboratoriais da
+ Universidade do Estado do Amazonas e residência da aluna orientada, situada
+ na cidade Manaus.
+ 
+\end_layout
+
+\begin_layout Section
+Organização do trabalho 
+\end_layout
+
+\begin_layout Standard
+Este trabalho está dividido em seis capítulos para seu melhor entendimento.
+ 
+\end_layout
+
+\begin_layout Standard
+O capítulo 1 aborda uma breve introdução sobre sistemas de controle e consumo
+ de energia, e conceitua o projeto por meio da justificativa e motivação.
+ Também traz objetivos a serem alcançados e a metodologia que foi utilizada.
+\end_layout
+
+\begin_layout Standard
+Já no capítulo 2 se dá a apresentação de trabalhos relacionados a essa monografi
+a, encaixando-a no contexto científico, descrevendo as principais semelhanças
+ e diferenças com os trabalhos já publicados.
+\end_layout
+
+\begin_layout Standard
+Um referencial teórico, direto e aplicado, necessário ao desenvolvimento
+ do projeto, é realizado no capítulo 3.
+ Isso ocorre apresentando os tópicos relevantes por meio da visão de autores
+ de obras consultadas e de trabalhos de pesquisa voltados para teorias e
+ tecnologias aplicadas nesta monografia.
+\end_layout
+
+\begin_layout Standard
+Em seguida, o capítulo 4 descreve como foi realizado o processo do desenvolvimen
+to e construção do protótipo de carro elétrico, citando os materiais utilizados.
+ Além disso, todas as etapas da metodologia são detalhadas, descrevendo-se
+ o que foi necessário implementar para a realização dos testes e obtenção
+ de dados de consumo de energia.
+ 
+\end_layout
+
+\begin_layout Standard
+No capítulo 5 os resultados obtidos são apresentados e discutidos.
+\end_layout
+
+\begin_layout Standard
+Por fim, no capítulo 6, os resultados são comparados, e uma conclusão é
+ formulada, de acordo com o tema proposto, buscando-se determinar o método
+ de sintonia de controlador PID mais eficiente, levando em consideração
+ o consumo de energia obtidos nos testes.
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset bibtex
+LatexCommand bibtex
+bibfiles "Referências Bibliográficas/ReferenciasNayana"
+options "abntex2-alf"
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

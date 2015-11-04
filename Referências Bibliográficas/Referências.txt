@@ -1,0 +1,43 @@
+﻿REFERÊNCIAS
+
+Eloquent Ruby (Addison-Wesley Professional Ruby Series) 1st Edition
+by Russ Olsen  (Author)
+Copyright © 2011 Pearson Education, Inc.
+Text printed in the United States on recycled paper at RR Donnelley in Crawfordsville, Indiana.
+First printing, February 2011
+
+Programming Ruby 1.9 & 2.0: The Pragmatic Programmers' Guide (The Facets of Ruby) 4th Edition
+by Dave Thomas, Chad Fowler, Andy Hunt
+Copyright © 2013 The Pragmatic Programmers, LLC.
+All rights reserved.
+Printed in the United States of America
+
+
+Beginning Ruby: From Novice to Professional (Expert's Voice in Open Source) 2nd Edition
+by Peter Cooper 
+https://books.google.com.br/books?id=VCQGjDhhbn8C&pg=PA5&lpg=PA5&dq=Beginning+Ruby:+From+Novice+to+Professional+peter+cooper+download&source=bl&ots=u8pyX8ybma&sig=Espk773Kx-oTGEIDrY839WO34OQ&hl=en&sa=X&ved=0CCMQ6AEwAjgKahUKEwi-872q8bPIAhXJJh4KHasNCD4#v=onepage&q=Beginning%20Ruby%3A%20From%20Novice%20to%20Professional%20peter%20cooper%20download&f=false
+
+Agile Web Development with Rails 4 (Facets of Ruby) 1st Edition
+by Sam Ruby, Dave Thomas, David Heinemeier Hansson
+Copyright © 2008 The Pragmatic Programmers LLC
+Printed in the United States of America
+
+
+Ruby on Rails Tutorial: Learn Web Development with Rails (2ndd Edition) (Addison-Wesley Professional Ruby Series) 3rd Edition
+by Michael Hartl 
+Copyright © 2013 Michael Hartl
+Text printed in the United States on recycled paper at Edwards Brothers Malloy in Ann Arbor,
+Michigan.
+
+https://www.ruby-lang.org/en/documentation/
+
+http://www.sketchup.com/intl/en/developer/
+
+http://www.sketchup.com/intl/en/developer/docs/examples
+
+http://www.sketchup.com/intl/en/developer/docs/gsrubyapi_examples?csw=1
+
+http://www.sketchup.com/intl/en/developer/docs/tutorial_geometry
+
+
+
