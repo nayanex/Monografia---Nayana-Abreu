@@ -447,143 +447,178 @@ O presente trabalho possui natureza de pesquisa aplicada, cujo objetivo
 \end_layout
 
 \begin_layout Standard
-Com relação à pesquisa propriamente dita, primeiramente foi realizada uma
- pesquisa bilbiográfica através de artigos com temas similares ou que utilizam
- ferramentas também necessárias para a construção do projeto.
- Sendo assim, houve uma exploração por temas como:
+O processo de pesquisa foi iniciado fazendo-se uma revisão bibliográfica
+ de assuntos relacionados ao tema do presente trabalho.
+ Foi realizada a leitura de artigos, livros, websites relacionados às ferramenta
+s utilizadas e cursos online em plataforma de Curso Online Aberto e Massivo,
+ popularmente conhecidos em língua inglesa como MOOC (Massive Open Online
+ Course).
+ 
 \end_layout
 
 \begin_layout Standard
+Durante a revisão bibliográfica de artigos, exploraram-se temas como: 
+\end_layout
+
+\begin_layout Itemize
 Reconstrução automática de modelos CAD 3D a partir de scanners digitais;
 \end_layout
 
-\begin_layout Standard
-Reconstrução de base correlacional de um objeto 3D a partir de um esboço
- desenhado a mão;
+\begin_layout Itemize
+Reconstrução de um objeto 3D a partir de um esboço desenhado manualmente;
 \end_layout
 
-\begin_layout Standard
-Computação de pontos de visualização para inspeção óptica 3D de componentes
- mecânicos;
+\begin_layout Itemize
+Geração de modelos de construção 3D a partir de plantas arquitetônicas;
+ 
 \end_layout
 
-\begin_layout Standard
-Geração de modelos de contrução 3D à partir de plantas arquitetônicas;
+\begin_layout Itemize
+Reconhecimento de objeto tridimensional a partir de uma única imagem de
+ duas dimensões; 
 \end_layout
 
-\begin_layout Standard
-Reconhecimento de objeto tridimensional a partir de ima única imagem de
- duas dimensoes;
-\end_layout
-
-\begin_layout Standard
+\begin_layout Itemize
 Reconhecimento automático de objetos de modelo CAD 3D em uma nuvem densa
- de faixas de pontos a laser;
+ pontos utilisando laser; 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
 Construção automática de modelos 3D de ambientes inabitados utilizando scanners
- a laser e sensores RFID;
+ a laser e sensores RFID; 
 \end_layout
 
-\begin_layout Standard
-Varredura de superfícies 3D automatizado baseado em modelos CAD, 
+\begin_layout Itemize
+Microambiente de sensoriamento para smartphones; 
 \end_layout
 
-\begin_layout Standard
-Microambiente de sensoriamento para smartphones, 
-\end_layout
-
-\begin_layout Standard
+\begin_layout Itemize
 Framework de sensoriamento em smartphones.
+ 
 \end_layout
 
 \begin_layout Standard
-Tal pesquisa através de artigos possibilitou uma visão e noção sobre as
- atuais descobertas e avanços na área de automação de geração CAD, assim
- como noção de problemas que ainda precisam de soluções ou melhorias.
- Também foi feita pesquisa por meio de livros utilizados no meio acadêmico,
- percorreu-se por temas como arquitetura de computadores, desenvolvimento
- de software para sistema operacional Android, computação gráfica, programação
- orientada a objetos, tecnologia web, projetos auxiliado por computador,
- sistemas sensoriais, linguagem de programação Ruby.
+A pesquisa por meio de artigos forneceu uma visão mais madura sobre as atuais
+ descobertas e avanços na área de automação na indústria CAD e também proporcion
+ou o confronto com problemas que ainda precisam de soluções ou melhorias.
+ 
 \end_layout
 
 \begin_layout Standard
-Após a fazer de revisão bibliográfica inicial, foi realizada uma pesquisa
- por softwares de geração CAD, onde no final, escolheu-se o 
-\shape italic
-SketchUp
-\shape default
-®, sendo assim possível a utilização da sua API em Ruby para geração automatizad
-a de desenhos 3D por meio de programação.
+A revisão bibliográfica por meio de livros explorou temas como: 
+\end_layout
+
+\begin_layout Itemize
+Arquitetura de computadores; 
+\end_layout
+
+\begin_layout Itemize
+Desenvolvimento de software para sistema operacional Android; 
+\end_layout
+
+\begin_layout Itemize
+Computação gráfica; 
+\end_layout
+
+\begin_layout Itemize
+Programação orientada a objetos; 
+\end_layout
+
+\begin_layout Itemize
+Tecnologia web; 
+\end_layout
+
+\begin_layout Itemize
+Projetos auxiliados por computador; 
+\end_layout
+
+\begin_layout Itemize
+Sistemas sensoriais; 
+\end_layout
+
+\begin_layout Itemize
+Linguagem de programação Ruby.
+ 
 \end_layout
 
 \begin_layout Standard
-Também realizou-se o curso 
-\shape italic
-Ruby on Rails: An Introduction 
-\shape default
-através da plataforma de MOOC Coursera, de forma a obter noções básicas
- de Ruby e programação orientada à objetos necessárias para manipulação
- da API em Ruby on Rails do software SketchUp.
+Após realização da revisão bibliográfica inicial, foi realizada uma pesquisa
+ por softwares de geração CAD 3D, onde ao final do processo, escolheu-se
+ o SketchUp®.
+ A automação de geração de modelos CAD 3D pode ser feita por meio de tal
+ software utilizando a sua API em Ruby.
+ 
 \end_layout
 
 \begin_layout Standard
-Também foi foram realizadas ações exploratórias de modo a entender como
- o software SketchUp funciona, foram seguidos alguns tutorias e vídeo aulas
- existentes no site oficial do software.
+De modo a obter conhecimento para utilização da API em Ruby do SketchUp,
+ participou-se do curso Ruby on Rails: An Introduction por meio da plataforma
+ de MOOC Coursera, de forma a obter noções básicas de Ruby e programação
+ orientada a objetos 
 \end_layout
 
 \begin_layout Standard
-Em seguida, foi feito um estudo da API em Ruby do SketchUp, dessa forma,
- pode-se ficar sabendo das classes e métodos existentes assim como exemplos
- de aplicações que acionam funcionalidades do softare, o que possibilitou
- o entendimento destas e expandiu formas de pensamento para impementação
- de funcionalidades customizadas relacionadas ao projeto.
+Também foi realizada exploração pelo software SketchUp de modo a entender
+ o seu funcionamento.
+ Utilizaram-se tutoriais online e vídeo aulas existentes no site oficial
+ do software.
 \end_layout
 
 \begin_layout Standard
-Sendo assim, pode-se crar scripts próprios que já possuem objetivo de automatiza
-r modelagem 3D, assim como testes com coordenadas falsas, através da entrada
- de dados por meio de caixas de diálogo.
+Em seguida, foi feito um estudo das funcionalidades oferecidas pela API
+ em Ruby do SketchUp.
+ Pode-se ver algumas de suas classes e métodos, assim como exemplos de aplicaçõe
+s que acionam funcionalidades do SketchUp.
+ O aprendizado de tais ajudou consideravelmente na fase de implementação
+ do algoritmo para o projeto.
+ 
 \end_layout
 
 \begin_layout Standard
-Tendo objetivos já alcançados na área da aplicação desktop, partiu-se para
- o trabalho no subsistema móvel.
- Para este fim, o sistema Operacional foi o escolhido por possuir uma consideráv
-el faixa de mercado.
+Sendo assim, pode-se criar scripts próprios que possuem objetivo de automatizar
+ modelagem 3D.
+ Nessa fase, foram feitos testes com coordenadas falsas, por meio da entrada
+ de dados em caixas de diálogo.
+ 
 \end_layout
 
 \begin_layout Standard
-De modo a obter produtividade no desenvolvimento de aplicativo para Android,
- escolheu-se utilizar a linguagem de programação Processing, que possui
- ambiente de desenvolvimento próprio e a biblioteca Ketai, desenvolvida
- exclusivamente para a manipulação de sensores e câmera de dispositivo dotada
- de sistema operacional Android
+Tendo os objetivos acima alcançados na área da aplicação desktop, partiu-se
+ para o trabalho na área de subsistema móvel.
+ Para este fim, o sistema operacional Android foi o escolhido por possuir
+ uma considerável fatia de mercado.
+ 
 \end_layout
 
 \begin_layout Standard
-Em seguida, testes foram realizados para verificar funcioalidade dos sensores
- giroscópio e acelerômetro e câmera do celular, podendo inicialiazar trabalho
- em algortimo para captação de coordenadas geométricas
+De modo a obter produtividade no desenvolvimento da aplicação Android, escolheu-
+se utilizar a linguagem de programação Processing, que possui ambiente de
+ desenvolvimento próprio, e a biblioteca Ketai, desenvolvida exclusivamente
+ para manipulação de sensores e câmera de dispositivo existentes na maioria
+ dos dispositivos móveis com sistema operacional Android.
+ 
 \end_layout
 
 \begin_layout Standard
-Em seguida, foram feitas comparações com as medidas obtidas por meio de
- aplicação feita para celular e as medições reais.
+Em seguida, testes foram realizados para verificação da funcionalidade dos
+ sensores giroscópio, acelerômetro e a câmera do celular, podendo-se assim
+ inicializar trabalho em algoritmo para captação de coordenadas geométricas.
+ Os testes dessa etapa consistem na simples comparação entre as medidas
+ obtidas por meio de aplicação Android desenvolvida e as medidas reais/analógica
+s.
 \end_layout
 
 \begin_layout Standard
-Com a coleção de coordenadas processados por sistema mobile, foi feita então,
- a integração destes em software de modelagem 3D SketchUp apor meio de utilizaçã
-o do objeto WebDialog do mesmo.
+Com a coleção de coordenadas obtidas por sistema mobile, foi feita então,
+ a integração destes em software de modelagem 3D SketchUp utilizando-se
+ a classe WebDialog do mesmo.
+ 
 \end_layout
 
 \begin_layout Standard
-Com o modelo gerado após o processo de integração anteriormente descrito,
+Tendo o modelo gerado após o processo de integração anteriormente descrito,
  é feita uma análise sobre sua coerência e propostas de melhoria são elaboradas.
+ 
 \end_layout
 
 \begin_layout Section

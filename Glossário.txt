@@ -2,3 +2,10 @@
 
 wearables
 
+plataforma mobile
+
+smartphone
+
+framework
+
+script
