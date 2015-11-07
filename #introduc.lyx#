@@ -85,11 +85,18 @@ name "chap:INTRODUÇÃO"
 \end_layout
 
 \begin_layout Standard
-Modelos 3D são utilizados em muitas aplicações, na indústria de games e
- filmes, setor médico, simulações de treinamento, realidade aumentada, arqueolog
-ia, inspeção industrial e muitas outras.
+Modelos 3D são utilizados em muitas aplicações, na indústria de 
+\shape italic
+games
+\shape default
+ e filmes, setor médico, simulações de treinamento, realidade aumentada,
+ arqueologia, inspeção industrial e muitas outras.
  Modelos 3D podem ser gerados por meio de processo de natureza artística
- ou técnica utilizando-se algum software de modelagem.
+ ou técnica utilizando-se algum 
+\shape italic
+software
+\shape default
+ de modelagem.
  No entanto, aplicações como inspeção industrial e projeto de plantas arquitetôn
 icas exigem uma representação realística de objetos complexos 
 \begin_inset CommandInset citation
@@ -150,15 +157,38 @@ O processo de digitalização 3D apresentado neste trabalho exige a seleção
 O processo de modelagem 3D nesse projeto pode ser dividido em três etapas
  gerais: a primeira se refere ao processo de aquisição de dados de coordenadas
  geométricas relativas utilizando-se dispositivo móvel com sistema operacional
- Android; a segunda é relativa ao pós-processamento, onde a modelagem é
- feita por meio de programação utilizando-se a Interface de Programação
- de Aplicações (API – 
+ 
+\shape italic
+Android
+\shape default
+®; a segunda é relativa ao pós-processamento, onde a modelagem é feita por
+ meio de programação utilizando-se a Interface de Programação de Aplicações
+ (API – 
 \shape italic
 Application Programming Interface
 \shape default
-) em Ruby do programa SketchUp; e a última etapa envolve a integração das
- duas fases anteriores por meio da utilização da classe WebDialog da API
- em Ruby do SketchUp.
+) em 
+\shape italic
+Ruby
+\shape default
+® do programa 
+\shape italic
+SketchUp
+\shape default
+®; e a última etapa envolve a integração das duas fases anteriores por meio
+ da utilização da classe 
+\shape italic
+WebDialog
+\shape default
+ da API em 
+\shape italic
+Ruby
+\shape default
+ do 
+\shape italic
+SketchUp
+\shape default
+®.
  
 \end_layout
 
@@ -253,8 +283,11 @@ smartphones
 
 \begin_layout Standard
 A velocidade dos avanços tecnológicos computacionais está continuamente
- abrindo caminho para novas ferramentas de design, aumentando a perspectiva
- de reutilização de projetos e automação.
+ abrindo caminho para novas ferramentas de 
+\shape italic
+design
+\shape default
+, aumentando a perspectiva de reutilização de projetos e automação.
  Esse fator pode ser usado para abolir tarefas rotineiras, eliminando possibilid
 ade de erros humanos e abrindo espaço para desenvolvimento de produtos mais
  personalizados 
@@ -281,9 +314,13 @@ o em outros projetos com diferentes medidas.
 O sistema proposto também abriria espaço para o desenvolvimento de novos
  produtos, beneficiando-se da produção modular e redução de trabalho com
  manutenção.
- Tal proposta visa acelerar o design e entrega de produtos, ao mesmo tempo
- em que objetiva reduzir custos e liberar engenheiros e técnicos para a
- realização de atividades de valor agregado mais significativo.
+ Tal proposta visa acelerar o 
+\shape italic
+design
+\shape default
+ e entrega de produtos, ao mesmo tempo em que objetiva reduzir custos e
+ liberar engenheiros e técnicos para a realização de atividades de valor
+ agregado mais significativo.
  
 \end_layout
 
@@ -293,11 +330,33 @@ Motivação
 
 \begin_layout Standard
 Na sociedade moderna são notáveis os avanços obtidos nas mais diversas áreas
- do conhecimento por meio do auxílio de computadores, tecnologia web e tecnologi
-a móvel (smartphones, wearables, etc.).
+ do conhecimento por meio do auxílio de computadores, tecnologia 
+\shape italic
+web
+\shape default
+ e tecnologia móvel (
+\shape italic
+smartphones
+\shape default
+, 
+\shape italic
+wearables
+\shape default
+, etc.).
  As infinitas possibilidades de criação proporcionadas pelas atuais plataformas
- mobile, dotadas de variadas funcionalidades de hardware e software, abrem
- espaço para a exploração de diversos temas.
+ 
+\shape italic
+mobile
+\shape default
+, dotadas de variadas funcionalidades de 
+\shape italic
+hardware
+\shape default
+ e 
+\shape italic
+software
+\shape default
+, abrem espaço para a exploração de diversos temas.
  Tais ferramentas aliadas à área de Controle e Automação possibilitam o
  foco em produtividade, racionalização de recursos (tempo, dinheiro, mão
  de obra etc.), melhoria da qualidade de produtos entre outros.
@@ -315,7 +374,7 @@ A possibilidade de explorar todos esses temas estudados durante o curso
 \begin_layout Standard
 O estudo dos sistemas produtivos e das tecnologias a eles associadas, como
  é o caso da automação industrial, está na frente dos assuntos que devem
- ser detalhadamente estudados dos diversos ramos relevantes da engenharia,
+ ser detalhadamente estudados nos diversos ramos relevantes da engenharia,
  de forma a obter o crescimento sustentável da sociedade, capaz de garantir
  o aumento da qualidade de vida sem desperdiçar em logo prazo os recursos
  disponíveis.
@@ -349,14 +408,28 @@ key "ROSARIO2005"
 \end_layout
 
 \begin_layout Standard
-Poder aprender mais sobre a indústria CAD, softwares de modelagem 3D modernos,
- o caráter computacional envolvido na produção desses softwares, a sua integraçã
-o com o ambiente Web, utilização programação orientada à objetos para o
- desenvolvimento de novas funcionalidades ou utilização das já existentes
- abre um leque de possibilidades e oportunidades.
- Além disso, o fato de poder explorar a utilidade de plataformas mobile
+Poder aprender mais sobre a indústria CAD, 
+\shape italic
+softwares
+\shape default
+ de modelagem 3D modernos, o caráter computacional envolvido na produção
+ desses 
+\shape italic
+softwares
+\shape default
+, a sua integração com o ambiente 
+\shape italic
+Web
+\shape default
+, utilização programação orientada a objetos para o desenvolvimento de novas
+ funcionalidades ou utilização das já existentes abre um leque de possibilidades
+ e oportunidades.
+ Além disso, o fato de poder explorar a utilidade de plataformas 
+\shape italic
+mobile
+\shape default
  neste trabalho garante um caráter inovador a propostas já existentes para
- o presente tema
+ o presente tema.
 \end_layout
 
 \begin_layout Section
@@ -377,18 +450,30 @@ Realizar revisão bibliográfica que confere embasamento teórico para realizaç
 \end_layout
 
 \begin_layout Itemize
-Escolher software de modelagem 3D e API e/ou linguagem de programação utilizados
- para construir algoritmo de geração automatizada de desenho 3D;
+Escolher 
+\shape italic
+software
+\shape default
+ de modelagem 3D e API e/ou linguagem de programação utilizados para construir
+ algoritmo de geração automatizada de desenho 3D;
 \end_layout
 
 \begin_layout Itemize
-Realizar testes com software e API de modelagem escolhidos, verificando
- suas funcionalidades, classes, métodos, etc;
+Realizar testes com 
+\shape italic
+software
+\shape default
+ e API de modelagem escolhidos, verificando suas funcionalidades, classes,
+ métodos, etc;
 \end_layout
 
 \begin_layout Itemize
 Iniciar trabalho em algoritmo para geração de modelos 3D utilizando as funcional
-idades da API e software de modelagem escolhidos;
+idades da API e 
+\shape italic
+software
+\shape default
+ de modelagem escolhidos;
 \end_layout
 
 \begin_layout Itemize
@@ -449,10 +534,23 @@ O presente trabalho possui natureza de pesquisa aplicada, cujo objetivo
 \begin_layout Standard
 O processo de pesquisa foi iniciado fazendo-se uma revisão bibliográfica
  de assuntos relacionados ao tema do presente trabalho.
- Foi realizada a leitura de artigos, livros, websites relacionados às ferramenta
-s utilizadas e cursos online em plataforma de Curso Online Aberto e Massivo,
- popularmente conhecidos em língua inglesa como MOOC (Massive Open Online
- Course).
+ Foi realizada a leitura de artigos, livros, 
+\shape italic
+websites
+\shape default
+ relacionados às ferramentas utilizadas e cursos 
+\shape italic
+online
+\shape default
+ em plataforma de
+\shape italic
+ Curso Online Aberto e Massivo
+\shape default
+, popularmente conhecidos em língua inglesa como MOOC (
+\shape italic
+Massive Open Online Course
+\shape default
+).
  
 \end_layout
 
@@ -461,7 +559,11 @@ Durante a revisão bibliográfica de artigos, exploraram-se temas como:
 \end_layout
 
 \begin_layout Itemize
-Reconstrução automática de modelos CAD 3D a partir de scanners digitais;
+Reconstrução automática de modelos CAD 3D a partir de 
+\shape italic
+scanners
+\shape default
+ digitais;
 \end_layout
 
 \begin_layout Itemize
@@ -480,20 +582,43 @@ Reconhecimento de objeto tridimensional a partir de uma única imagem de
 
 \begin_layout Itemize
 Reconhecimento automático de objetos de modelo CAD 3D em uma nuvem densa
- pontos utilisando laser; 
+ pontos utilisando 
+\shape italic
+laser
+\shape default
+; 
 \end_layout
 
 \begin_layout Itemize
-Construção automática de modelos 3D de ambientes inabitados utilizando scanners
- a laser e sensores RFID; 
+Construção automática de modelos 3D de ambientes inabitados utilizando 
+\shape italic
+scanners
+\shape default
+ a 
+\shape italic
+laser
+\shape default
+ e sensores RFID; 
 \end_layout
 
 \begin_layout Itemize
-Microambiente de sensoriamento para smartphones; 
+Microambiente de sensoriamento para 
+\shape italic
+smartphones
+\shape default
+; 
 \end_layout
 
 \begin_layout Itemize
-Framework de sensoriamento em smartphones.
+
+\shape italic
+Framework
+\shape default
+ de sensoriamento em 
+\shape italic
+smartphones
+\shape default
+.
  
 \end_layout
 
@@ -513,7 +638,15 @@ Arquitetura de computadores;
 \end_layout
 
 \begin_layout Itemize
-Desenvolvimento de software para sistema operacional Android; 
+Desenvolvimento de 
+\shape italic
+software
+\shape default
+ para sistema operacional 
+\shape italic
+Android
+\shape default
+®; 
 \end_layout
 
 \begin_layout Itemize
@@ -525,7 +658,11 @@ Programação orientada a objetos;
 \end_layout
 
 \begin_layout Itemize
-Tecnologia web; 
+Tecnologia 
+\shape italic
+web
+\shape default
+; 
 \end_layout
 
 \begin_layout Itemize
@@ -537,12 +674,250 @@ Sistemas sensoriais;
 \end_layout
 
 \begin_layout Itemize
-Linguagem de programação Ruby.
+Linguagem de programação 
+\shape italic
+Ruby
+\shape default
+®.
+ 
+\end_layout
+
+\begin_layout Standard
+Após realização da revisão bibliográfica inicial, foi realizada uma pesquisa
+ por 
+\shape italic
+softwares
+\shape default
+ de geração CAD 3D, onde ao final do processo, escolheu-se o 
+\shape italic
+SketchUp
+\shape default
+®.
+ A automação de geração de modelos CAD 3D pode ser feita por meio de tal
+ programa utilizando a sua API em 
+\shape italic
+Ruby
+\shape default
+®.
+ 
+\end_layout
+
+\begin_layout Standard
+De modo a obter conhecimento para utilização da API em 
+\shape italic
+Ruby
+\shape default
+ do 
+\shape italic
+SketchUp
+\shape default
+®, participou-se do curso 
+\shape italic
+Ruby on Rails: An Introduction 
+\shape default
+por meio da plataforma de MOOC 
+\shape italic
+Coursera
+\shape default
+®, de forma a obter noções básicas de 
+\shape italic
+Ruby
+\shape default
+® e programação orientada a objetos.
+ 
+\end_layout
+
+\begin_layout Standard
+Também foi realizada exploração pelo 
+\shape italic
+software SketchUp
+\shape default
+® de modo a entender o seu funcionamento.
+ Utilizaram-se tutoriais 
+\shape italic
+online
+\shape default
+ e vídeo aulas existentes no site oficial do 
+\shape italic
+software
+\shape default
+.
+\end_layout
+
+\begin_layout Standard
+Em seguida, foi feito um estudo das funcionalidades oferecidas pela API
+ em 
+\shape italic
+Ruby
+\shape default
+ do 
+\shape italic
+SketchUp
+\shape default
+®.
+ Pode-se ver algumas de suas classes e métodos, assim como exemplos de aplicaçõe
+s que acionam funcionalidades do 
+\shape italic
+SketchUp
+\shape default
+®.
+ O aprendizado de tais ajudou consideravelmente na fase de implementação
+ do algoritmo para o projeto.
+ 
+\end_layout
+
+\begin_layout Standard
+Sendo assim, pode-se criar 
+\shape italic
+scripts
+\shape default
+ próprios que possuem objetivo de automatizar modelagem 3D.
+ Nessa fase, foram feitos testes com coordenadas falsas, por meio da entrada
+ de dados em caixas de diálogo.
+ 
+\end_layout
+
+\begin_layout Standard
+Tendo os objetivos acima alcançados na área da aplicação 
+\shape italic
+desktop
+\shape default
+, partiu-se para o trabalho na área de subsistema móvel.
+ Para este fim, o sistema operacional 
+\shape italic
+Android
+\shape default
+® foi o escolhido por possuir uma considerável fatia de mercado.
+ 
+\end_layout
+
+\begin_layout Standard
+De modo a obter produtividade no desenvolvimento da aplicação 
+\shape italic
+Android
+\shape default
+®, escolheu-se utilizar a linguagem de programação 
+\shape italic
+Processing
+\shape default
+®, que possui ambiente de desenvolvimento próprio, e a biblioteca 
+\shape italic
+Ketai
+\shape default
+®, desenvolvida exclusivamente para manipulação de sensores e câmera de
+ dispositivo existentes na maioria dos dispositivos móveis com sistema operacion
+al 
+\shape italic
+Android
+\shape default
+®.
+ 
+\end_layout
+
+\begin_layout Standard
+Em seguida, testes foram realizados para verificação da funcionalidade dos
+ sensores giroscópio, acelerômetro e a câmera do celular, podendo-se assim
+ inicializar trabalho em algoritmo para captação de coordenadas geométricas.
+ Os testes dessa etapa consistem na simples comparação entre as medidas
+ obtidas por meio de aplicação 
+\shape italic
+Android
+\shape default
+® desenvolvida e as medidas reais/analógicas.
+\end_layout
+
+\begin_layout Standard
+Com a coleção de coordenadas obtidas por sistema 
+\shape italic
+mobile
+\shape default
+, foi feita então, a integração destes em 
+\shape italic
+software
+\shape default
+ de modelagem 3D 
+\shape italic
+SketchUp
+\shape default
+® utilizando-se a classe 
+\shape italic
+WebDialog
+\shape default
+ do mesmo.
+ 
+\end_layout
+
+\begin_layout Standard
+Tendo o modelo gerado após o processo de integração anteriormente descrito,
+ é feita uma análise sobre sua coerência e propostas de melhoria são elaboradas.
  
 \end_layout
 
 \begin_layout Section
 Organização do trabalho 
+\end_layout
+
+\begin_layout Standard
+O presente trabalho se encontra organizado em seis capitulos.
+\end_layout
+
+\begin_layout Standard
+O capítulo um apresenta a introdução, onde se explica como se chegou ao
+ objeto de estudo desta pesquisam problemátia, objetivos, motivação e relevância
+ deste estudo.
+ Onde se situa o leitor no contexto da pesquisa, o porquê das pesquisa,
+ as limitações encontradas, o alcance de investigação, bases teóricas, técnicas
+ e gerais.
+ Detalhadamente se descreve através deste capítulo o problema proposto na
+ pesquisa, os objetivos, determinando a pretensão do alcance da investigação,
+ o que se propões a fazer, que aspectos se pretende analisar, servindo como
+ complemento da delimitação do problema.
+ A justificativa destaca a importância do tema abordado tendo em vista o
+ estágio atual da ciência, suas divergências e a contribuição que pretende
+ proporcionar a pesquisa para o problema abordado.
+ A metodologia esclarece a forma que foi utilizada a análise do problema
+ proposto.
+\end_layout
+
+\begin_layout Standard
+O capítulo dois aborda o referencial teórico de forma detalhada, proporcionando
+ embasamento teórico obtido para produção desta pesquisa.
+ A revisão da literatura proporciona um apanhado geral do que se sabe sobre
+ o assunto investigado, fornecendo ao leitor as bases teóricas sobre as
+ quais se processou a investigação.
+ apresenta uma introducao simples, clara e sintética dando ao leitor uma
+ ideia objetiva do que vai ser tratado.
+\end_layout
+
+\begin_layout Standard
+O capítulo três aborda uma visão geral do sistema proposto
+\end_layout
+
+\begin_layout Standard
+O capítulo 4 aborda a metodologi e materiais utilizados para a criação do
+ sistema proposto.
+ Descreve os métodos e procedimentos usados, apresenta equipamentos usados,
+ arranjo experimental e principais componentes e discute sua precisão.
+ Quando equipamento é comercial apresenta o fabricante e modelo.
+ Discute como os dados foram analisados e como as incertezas foram consideradas
+\end_layout
+
+\begin_layout Standard
+O capítulo 5 aborda os resultados obtidos e discussão apresenta as descobertas
+ do presente esdudo, apresentando sua acurácia e signific6ancia, apresentando
+ os dados, mas não os interpretando
+\end_layout
+
+\begin_layout Standard
+O capitulo 5 apresenta as conclusões sobre a presente pesquisa, assim como
+ sugere.
+ Retorna ao problema inicial lançaado na introdução revendo as proncipais
+ contribuições que a presente pesquisa traz, apresentando o resultado final,
+ global da investigação, avaliando os pontos fortes e positivos através
+ da reunião sintética das principais ideias desenvolvidas ou conclusões
+ parciais obtidas.
+ Convém também apontar na conclusão problemas decorrentes do tema investigado
+ que poderão servir para futuras pesquisas.
 \end_layout
 
 \begin_layout Standard
