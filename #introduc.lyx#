@@ -853,116 +853,117 @@ Tendo o modelo gerado após o processo de integração anteriormente descrito,
  
 \end_layout
 
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Fluxograma de metodologia do projeto"
+
+\end_inset
+
+Fluxograma de metodologia do projeto
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figuras/Metodologia.png
+	rotateOrigin center
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
 Organização do trabalho 
 \end_layout
 
 \begin_layout Standard
-O presente trabalho se encontra organizado em seis capitulos.
-\end_layout
-
-\begin_layout Standard
-O capítulo um apresenta a introdução, onde se explica como se chegou ao
- objeto de estudo desta pesquisam problemátia, objetivos, motivação e relevância
- deste estudo.
- Onde se situa o leitor no contexto da pesquisa, o porquê das pesquisa,
- as limitações encontradas, o alcance de investigação, bases teóricas, técnicas
- e gerais.
- Detalhadamente se descreve através deste capítulo o problema proposto na
- pesquisa, os objetivos, determinando a pretensão do alcance da investigação,
- o que se propões a fazer, que aspectos se pretende analisar, servindo como
- complemento da delimitação do problema.
- A justificativa destaca a importância do tema abordado tendo em vista o
- estágio atual da ciência, suas divergências e a contribuição que pretende
- proporcionar a pesquisa para o problema abordado.
- A metodologia esclarece a forma que foi utilizada a análise do problema
- proposto.
-\end_layout
-
-\begin_layout Standard
-O capítulo dois aborda o referencial teórico de forma detalhada, proporcionando
- embasamento teórico obtido para produção desta pesquisa.
- A revisão da literatura proporciona um apanhado geral do que se sabe sobre
- o assunto investigado, fornecendo ao leitor as bases teóricas sobre as
- quais se processou a investigação.
- apresenta uma introducao simples, clara e sintética dando ao leitor uma
- ideia objetiva do que vai ser tratado.
-\end_layout
-
-\begin_layout Standard
-O capítulo três aborda uma visão geral do sistema proposto
-\end_layout
-
-\begin_layout Standard
-O capítulo 4 aborda a metodologi e materiais utilizados para a criação do
- sistema proposto.
- Descreve os métodos e procedimentos usados, apresenta equipamentos usados,
- arranjo experimental e principais componentes e discute sua precisão.
- Quando equipamento é comercial apresenta o fabricante e modelo.
- Discute como os dados foram analisados e como as incertezas foram consideradas
-\end_layout
-
-\begin_layout Standard
-O capítulo 5 aborda os resultados obtidos e discussão apresenta as descobertas
- do presente esdudo, apresentando sua acurácia e signific6ancia, apresentando
- os dados, mas não os interpretando
-\end_layout
-
-\begin_layout Standard
-O capitulo 5 apresenta as conclusões sobre a presente pesquisa, assim como
- sugere.
- Retorna ao problema inicial lançaado na introdução revendo as proncipais
- contribuições que a presente pesquisa traz, apresentando o resultado final,
- global da investigação, avaliando os pontos fortes e positivos através
- da reunião sintética das principais ideias desenvolvidas ou conclusões
- parciais obtidas.
- Convém também apontar na conclusão problemas decorrentes do tema investigado
- que poderão servir para futuras pesquisas.
-\end_layout
-
-\begin_layout Standard
-Este trabalho está dividido em seis capítulos para seu melhor entendimento.
+O presente trabalho se encontra organizado em seis capítulos.
  
 \end_layout
 
 \begin_layout Standard
-O capítulo 1 aborda uma breve introdução sobre sistemas de controle e consumo
- de energia, e conceitua o projeto por meio da justificativa e motivação.
- Também traz objetivos a serem alcançados e a metodologia que foi utilizada.
-\end_layout
-
-\begin_layout Standard
-Já no capítulo 2 se dá a apresentação de trabalhos relacionados a essa monografi
-a, encaixando-a no contexto científico, descrevendo as principais semelhanças
- e diferenças com os trabalhos já publicados.
-\end_layout
-
-\begin_layout Standard
-Um referencial teórico, direto e aplicado, necessário ao desenvolvimento
- do projeto, é realizado no capítulo 3.
- Isso ocorre apresentando os tópicos relevantes por meio da visão de autores
- de obras consultadas e de trabalhos de pesquisa voltados para teorias e
- tecnologias aplicadas nesta monografia.
-\end_layout
-
-\begin_layout Standard
-Em seguida, o capítulo 4 descreve como foi realizado o processo do desenvolvimen
-to e construção do protótipo de carro elétrico, citando os materiais utilizados.
- Além disso, todas as etapas da metodologia são detalhadas, descrevendo-se
- o que foi necessário implementar para a realização dos testes e obtenção
- de dados de consumo de energia.
+O capítulo 1 consiste na introdução, onde procura-se situar o leitor no
+ contexto da pesquisa, apresentando problemática, justificativa, motivação,
+ objetivos, bases teóricas técnicas, visão geral da metodologia e estrutura
+ do trabalho.
+ Procura-se detalhar o alcance de investigação e aspectos de análise, servindo
+ como complemento de delimitação do problema.
  
 \end_layout
 
 \begin_layout Standard
-No capítulo 5 os resultados obtidos são apresentados e discutidos.
+O capítulo 2 aborda o referencial teórico de forma detalhada, proporcionando
+ embasamento teórico obtido para produção desta pesquisa, e fazendo-se um
+ apanhado geral do que se sabe sobre o assunto investigado.
+ Também apresenta trabalhos com temáticas relacionadas, tendo em vista o
+ estágio atual da ciência, suas divergências e contribuições proporcionadas
+ para o problema abordado.
+ 
 \end_layout
 
 \begin_layout Standard
-Por fim, no capítulo 6, os resultados são comparados, e uma conclusão é
- formulada, de acordo com o tema proposto, buscando-se determinar o método
- de sintonia de controlador PID mais eficiente, levando em consideração
- o consumo de energia obtidos nos testes.
+O capítulo 3 aborda uma visão geral do sistema proposto, detalhando como
+ ele é dividido, que tecnologias de software e hardware são utilizadas em
+ cada camada do sistema assim como suas respectivas funcionalidades e papéis
+ de forma sistêmica.
+ 
+\end_layout
+
+\begin_layout Standard
+O capítulo 4 aborda a metodologia e materiais utilizados para a criação
+ do sistema proposto, discutindo o arranjo experimental e sua precisão.
+ Para equipamentos comerciais apresentam-se seus fabricantes e modelos.
+ Também se discute como os dados foram analisados e incertezas foram considerada
+s.
+ 
+\end_layout
+
+\begin_layout Standard
+O capítulo 5 aborda os resultados obtidos e discute sobre as descobertas
+ do presente estudo, relatando sua acurácia e significância, no entanto,
+ ainda não há interpretação de dados obtidos.
+ 
+\end_layout
+
+\begin_layout Standard
+O capitulo 6 apresenta as conclusões sobre a presente pesquisa, retornando
+ ao problema inicial lançado na introdução e revê suas principais contribuições,
+ avaliando os pontos fortes e positivos através da reunião sintética das
+ principais ideias desenvolvidas ou conclusões parciais obtidas.
+ Os resultados obtidos são interpretados e discutidos de forma independente.
+ Também se apontam problemas decorrentes do tema investigado que poderão
+ servir para futuras pesquisas.
+ 
 \end_layout
 
 \end_body
