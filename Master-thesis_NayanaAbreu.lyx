@@ -1453,7 +1453,17 @@ textual
 \begin_layout Standard
 \begin_inset CommandInset include
 LatexCommand include
-filename "introduc.lyx"
+filename "Capitulo1_Introducao.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand include
+filename "Capitulo2_Referencial_Teorico.lyx"
 
 \end_inset
 
