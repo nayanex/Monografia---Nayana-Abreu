@@ -432,7 +432,6 @@ scanner
 \end_layout
 
 \begin_layout Standard
-
 \begin_inset Float figure
 placement H
 wide false
@@ -581,7 +580,11 @@ key "LIPSON2007"
  ruídos de um objeto 3D em um plano 2D arbitrário.
  Neste artigo chama-se de reconstrução a projeção inversa da geometria do
  esboço a partir de duas dimensões de volta em três dimensões.
- Enquanto humanos podem fazer essa projeção reversa de forma fácil e intuitiva,
+ 
+\end_layout
+
+\begin_layout Standard
+Enquanto humanos podem fazer essa projeção reversa de forma fácil e intuitiva,
  esse processo é matematicamente indeterminado e complexo de emular computaciona
 lmente e é exatamente esta habilidade de entender e gerar esboços que se
  deseja emular no trabalho relatado por tal artigo.
@@ -590,12 +593,525 @@ lmente e é exatamente esta habilidade de entender e gerar esboços que se
  2D-3D aprendida a partir de experiência visual.
  Por outro lado, mostra-se como o mesmo dado de correlação pode ser usado
  para medir o entendimento de projeções de objetos 3D gerados sinteticamente.
- Usando tais princípios demonstra-se pela primeira vez uma conversão completamen
-te automática de um esboço feito à mão em um objeto sólido físico.
+ 
+\end_layout
+
+\begin_layout Standard
+Usando tais princípios demonstra-se pela primeira vez uma conversão completament
+e automática de um esboço feito à mão em um objeto sólido físico.
  Esses resultados possuem implicações para comunicação homem-máquina bidireciona
 l de conceitos de gráficos 3D, e também pode lançar luz sobre o sistema
  visual humano.
  
+\end_layout
+
+\begin_layout Standard
+Um esboço é uma coleção de linhas em uma superfície plana, representando
+ uma projeção arbitrária de um objeto arbitrário.
+ Neste artigo assume-se que todas as arestas de um objeto são esboçadas
+ e linhas retas.
+ Também se assume que cada encontro de linhas corresponde a uma única aresta,
+ e arestas se encontram em pontos finais.
+ As transformações de projeções extraem as informações de profundidade de
+ cada vértice do gráfico de aresta-vértice, consequentemente, qualquer conjunto
+ arbitrário de profundidades {Z} que são retribuídas aos vértices do gráfico
+ constitui uma configuração 3D cuja projeção corresponderá ao esboço dado.
+ A figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "Projeções paralelas de configuração 3D de esboço 2D"
+
+\end_inset
+
+ representa uma reconstrução das coordenadas (Z) de um desenho de profundidade
+ desconhecida com coordenadas x, y.
+ Em projeções paralelas, os graus de liberdade são perpendiculares ao plano
+ de esboço.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "Projeções paralelas de configuração 3D de esboço 2D"
+
+\end_inset
+
+Projeções paralelas de configuração 3D de esboço 2D.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figuras/Reconstrução 3D a partir de objeto 2D.png
+	scale 50
+	rotateOrigin center
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+Fonte: 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "LIPSON2007"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+A literatura de visão computacional possui extensivas técnicas para extrair
+ informação espacial a partir de imagens.
+ Estes métodos tipicamente se baseiam em várias pistas de profundidade como,
+ sombreamento, iluminação, oclusão, perspectiva, fluxo ótico, entre outras.
+ No entanto, tais pistas não se encontram disponíveis no problema de tal
+ artigo, pois nele analisa-se um esboço feito manualmente.
+ 
+\end_layout
+
+\begin_layout Standard
+A literatura contém várias formas de interpretar e reconstruir objetos e
+ cenas a partir de linhas de desenho, como descrito abaixo.
+ Muitos sistemas usam uma mistura dessas técnicas de forma a melhorar o
+ desempenho.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Rotulagem de Linhas
+\series default
+ é uma forma de interpretação de uma linha de desenho que fornece informação
+ espacial sobre a cena, mas não produz uma representação 3D explícita.
+ Para cada linha no desenho é atribuída um dos seguintes três significados:
+ convexo, côncavo, borda oclusiva.
+ Dicionários de junções e gráficos de restrições são usados para achar atribuiçõ
+es consistentes.
+\end_layout
+
+\begin_layout Standard
+A abordagem de
+\series bold
+ Espaço Gradiente
+\series default
+ desenha uma relação entre a inclinação das linhas no plano de desenho e
+ o gradiente das faces na cena 3D descrita.
+ Assumindo um tipo particular de projeção, uma relação matemática exata
+ pode ser calculada, e possíveis interpretações de desenho podem ser restringida
+s.
+ 
+\end_layout
+
+\begin_layout Standard
+A abordagem de 
+\series bold
+Sistema Linear
+\series default
+ usa um conjunto de equações e inequações lineares definidas em termos das
+ coordenadas do vértice e equações planas das faces dos objetos, determinados
+ vértices estão em cima, em frente de, ou atrás de faces poligonais.
+ A solvabilidade desse programa linear é uma condição suficiente para a
+ reconstrução do objeto.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Métodos Interativos
+\series default
+ gradualmente constroem a estrutura 3D anexando faces uma após a outra como
+ esboçado e especificado pelo usuário.
+ O objetivo é fornecer um método prático para construir modelos 3D em um
+ ambiente CAD/CAM interativo.
+ 
+\end_layout
+
+\begin_layout Standard
+A abordagem de 
+\series bold
+Identificação Primitiva
+\series default
+ reconstrói a cena reconhecendo instâncias integrais ou parciais de formas
+ primitivas conhecidas, como blocos, cilindros etc.
+ Essa abordagem assume que o objeto 3D representado seja composto inteiramente
+ por primitivos conhecidos, mas possui o benefício de gerar a estrutura
+ 3D final em uma forma geométrica sólida conveniente.
+ 
+\end_layout
+
+\begin_layout Standard
+A abordagem de
+\series bold
+ Desvio Padrão Mínimo
+\series default
+ foca em uma observação simples e única; que a interpretação humana de linhas
+ de desenho tende a ser a mais simples possível, por exemplo, a interpretação
+ em que os ângulos criados entre linhas e junções é o mais uniforme possível
+ através do objeto reconstruído, inflando o esboço plano em um objeto 3D
+ regularizado.
+ 
+\end_layout
+
+\begin_layout Standard
+A abordagem de 
+\series bold
+Heurística Analítica
+\series default
+ usa restrições geométricas suaves codificadas, como paralelismo, simetria
+ enviesada e outras para procurar reconstrução mais plausível.
+ 
+\end_layout
+
+\begin_layout Standard
+Foi utilizada uma abordagem de reconstrução 3D baseando-se no fato de que
+ humanos aprendem correlações entre geometria 3D e seu padrão 2D projetado.
+ Essas relações foram coletadas empiricamente gerando-se várias cenas 3D
+ e as projetando com ruído (distribuição normal com desvio padrão σ = 2%
+ do comprimento do objeto).
+ 
+\end_layout
+
+\begin_layout Standard
+Então, define-se uma correlação geométrica 3D-2D como probabilidade de uma
+ certa configuração 2D para representar determinada configuração 3D.
+ Por exemplo, considerando a figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "Correlação 2D-3D"
+
+\end_inset
+
+a.
+ O par de linhas 3D AB cria um ângulo 3D α
+\begin_inset Formula $_{3D}$
+\end_inset
+
+= ∠ AB.
+ Quando o par de linha é projetado no plano de esboço, ele produz um par
+ de linhas ab.
+ O ângulo projetado é 
+\begin_inset Formula $\alpha{}_{2D}$
+\end_inset
+
+ ∠ ab.
+ Medindo essa correlação sobre várias projeções arbitrárias de objetos em
+ um certo repertório, pode-se derivar a função de densidade probabilidade
+ (FDP) (α
+\begin_inset Formula $_{3D}$
+\end_inset
+
+, 
+\begin_inset Formula $\alpha{}_{2D}$
+\end_inset
+
+) para o repertório de objetos.
+ Pode-se então usar esta função de probabilidade para determinar a compatibilida
+de de uma reconstrução candidata.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "Correlação 2D-3D"
+
+\end_inset
+
+Correlação 2D-3D.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Box Frameless
+position "c"
+hor_pos "c"
+has_inner_box 1
+inner_pos "c"
+use_parbox 0
+use_makebox 0
+width "50col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+(a) Segunda ordem
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Figuras/Correlação 2D-3D de segunda ordem.png
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Box Frameless
+position "c"
+hor_pos "c"
+has_inner_box 1
+inner_pos "c"
+use_parbox 0
+use_makebox 0
+width "50col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+(b) Terceira ordem
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Figuras/Correlação 2D-3D de terceira ordem.png
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+Fonte: 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "LIPSON2007"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Ao invés de apenas medir ângulos, também pode-se medir comprimentos.
+ Poder-se-ia medir a correlação entre taxa de comprimento em 3D 
+\begin_inset Formula $\alpha{}_{3D}=A/B$
+\end_inset
+
+ para a taxa de comprimento em 2D
+\begin_inset Formula $\alpha{}_{2D}=a/b$
+\end_inset
+
+.
+ Similarmente, poder-se-ia escolher correlacionar A/B com ∠ ab, ou ∠ AB
+ com a/b, e assim por diante.
+ Além disso, pode-se expandir estas correlações a terceira ordem, correlacionand
+o várias relações ângulo-comprimento entre as três linhas, como o ângulo
+ de três linhas em 3D AxB.C versus o ângulo de cone em 2D min(a.b, b.c, c.a),
+ veja figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "Correlação 2D-3D"
+
+\end_inset
+
+b.
+\end_layout
+
+\begin_layout Standard
+Correlações de ordem mais alta também podem ser gravadas na forma de função
+ de densidade probabilidade trivariada como (α
+\begin_inset Formula $_{3D}$
+\end_inset
+
+, α
+\begin_inset Formula $_{2D}$
+\end_inset
+
+, ρ
+\begin_inset Formula $_{2D}$
+\end_inset
+
+ ), e até mesmo ordens mais altas.
+ Nos experimentos de tal artigo utilizaram-se apenas probabilidades bivariadas.
+ Elas foram coletadas a partir de 100.000 cenas aleatórias e armazenadas
+ em tabelas.
+ Representações de memória de correlação mais eficientes como redes neurais
+ ou rede Bayesiana também poderiam ser utilizadas.
+ 
+\end_layout
+
+\begin_layout Standard
+Uma vez que funções correlacionais geométricas são conhecidas, é possível
+ calcular a probabilidade de um particular objeto 3D ser a fonte de dado
+ esboço 2D.
+ A probabilidade de 
+\begin_inset Formula $\alpha{}_{3D}$
+\end_inset
+
+ dado 
+\begin_inset Formula $\alpha{}_{2D}$
+\end_inset
+
+ é dada por: 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+p(\alpha_{3D}/\alpha_{2D})=\frac{fdp\,(\alpha_{3D}/\alpha_{2D}).\delta\alpha_{3D}.\delta\alpha_{2D}}{fdp\,(\alpha_{2D}).\delta\alpha_{2D}}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Onde os
+\begin_inset Formula $\delta\alpha$
+\end_inset
+
+'s são as tolerâncias das medidas.
+ Esta probabilidade é acumulada (multiplicada) por todos os pares/tuplas
+ de linha nos objetos candidatos e esboços em questão.
+ uma vez que a probabilidade de uma reconstrução candidata possa ser avaliada,
+ então o processo de reconstrução leva a um problema de otimização, onde
+ o objetivo final é achar um conjunto de coordenadas {Z} que maximiza a
+ probabilidade.
+\end_layout
+
+\begin_layout Standard
+De modo a completar a transição em um sólido de verdade, ainda é necessário
+ identificar qual das arestas do circuito constituem as faces do objeto,
+ e qual é o lado do material de cada face.
+ Foi utilizado um algoritmo de identificação de face topológica para marcar
+ faces, e então escolher normais que marcam para fora, de modo que faces
+ adjacentes sejam consistentes e o volume total do objeto seja positivo.
+ Uma vez que o modelo sólido exista ele estará pronto para processo de renderiza
+ção e produção utilizando-se impressora comercial 3D (prototipagem rápida).
+ A produção automática de um modelo físico constitui a última confirmação
+ do rigor da interpretação e sua topologia.
+ A figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "Várias reconstruções 3D geradas automaticamente a partir de esboços 2D feitos à mão"
+
+\end_inset
+
+ mostra o esboço 2D feito manualmente e várias vistas geradas automaticamente.
+ A imagem do fundo direito representa um objeto sólido gerado automaticamente.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "Várias reconstruções 3D geradas automaticamente a partir de esboços 2D feitos à mão"
+
+\end_inset
+
+Várias reconstruções 3D geradas automaticamente a partir de esboços 2D feitos
+ à mão.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figuras/Varias reconstruções 3D geradas automaticamente a partir de esboços 2D feitos à mão..png
+	scale 50
+	rotateOrigin center
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+Fonte: 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "LIPSON2007"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Os objetos reconstruídos não são acurados, uma representação curada requer
+ mais informação como dimensões e restrições específicas.
 \end_layout
 
 \begin_layout Section
